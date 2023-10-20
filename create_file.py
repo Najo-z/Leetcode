@@ -11,7 +11,7 @@ def main():
         print('Provide problem number as argument.')
         return
     problem = int(sys.argv[1])
-    path = f'{problem}.py'
+    path = f'problems/{problem}.py'
     if os.path.exists(path):
         print(f'Problem number file already exists: {path}.')
         return
