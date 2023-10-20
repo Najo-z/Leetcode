@@ -9,7 +9,7 @@ class TreeNode:
 
 class Solution:
     def getTargetCopy(self, original: TreeNode, cloned: TreeNode, target: TreeNode) -> TreeNode:
-        res = {}
+        res = {'stop': False}
         self.helper(cloned, target, res)
         return res['result']
 
